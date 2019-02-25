@@ -5,12 +5,15 @@
  */
 package ec.edu.ister.controlador;
 
+import ec.edu.ister.vista.FrmGestionPoliticos;
+
 /**
  *
  * @author Carlos Carvajal y Luis Cevallos
  */
 public class ClaseMain {
     public static void main(String[] args) {
-        System.out.println("Regiatro personal de la.policia");
+        FrmGestionPoliticos ventana = new FrmGestionPoliticos();
+        ventana.setVisible(true);
     }
 }
