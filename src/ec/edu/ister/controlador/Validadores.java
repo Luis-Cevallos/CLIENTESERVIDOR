@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Jeison / Código Vago - www.codigovago.com 
+ * @author Carlos Carvajal y Luis Cevallos
  */
 public class Validadores {
     public void numerico(java.awt.event.KeyEvent evt) { 
