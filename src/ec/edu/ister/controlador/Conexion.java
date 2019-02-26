@@ -11,24 +11,25 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author Carlos Carvajal y Luis Cevallos
  */
 public class Conexion { 
-    private Connection con = null; 
+    private Connection conexion = null; 
     public Connection getConexion(){ 
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/politicos","root","");  
+            conexion = DriverManager.getConnection("jdbc:mysql://sql10.freemysqlhosting.net/sql10280531?useTimezone=true&serverTimezone=GMT&useSSL=false&allowPublicKeyRetrieval=true","sql10280531","6KT5eGWrIh");  
 //            System.out.println("Conexion exitosa");
         } catch(SQLException e){
-            System.err.println( e.toString() );
-//            System.out.println("Conexion fallida");
+            System.out.println(e.getMessage());
+            JOptionPane.showMessageDialog(null,"Solucione problemas del servidor de Base de Datos..");
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
         }
-      return con;  
+      return conexion;  
     }
 }

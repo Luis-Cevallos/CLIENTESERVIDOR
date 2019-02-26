@@ -6,6 +6,8 @@
 
 package ec.edu.ister.controlador;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Jeison / Código Vago - www.codigovago.com 
@@ -19,4 +21,13 @@ public class Validadores {
         char c = evt.getKeyChar();
         if ((c<'a' || c>'z')&&(c<'A' || c>'Z')&&(c<' ' || c>' ' )) evt.consume(); {}
     }
+//    public boolean camposObligatorios(String cedulaPol,String nombresPol,String apellidoPol,String direccionPol, String telefonoPol){
+//        String blanco="";
+//        if (cedulaPol.equals(blanco) || nombresPol.equals(blanco) || apellidoPol.equals(blanco) || direccionPol.equals(blanco) || telefonoPol.equals(blanco)) {
+//            JOptionPane.showMessageDialog(null,"No puden existir campos en blanco");
+//            return true;
+//        }else{
+//            return false;
+//        }
+//    }
 }

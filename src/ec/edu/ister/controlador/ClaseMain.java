@@ -5,7 +5,7 @@
  */
 package ec.edu.ister.controlador;
 
-import ec.edu.ister.vista.FrmGestionPoliticos;
+import ec.edu.ister.vista.FrmGestionPolicias;
 
 /**
  *
@@ -13,7 +13,7 @@ import ec.edu.ister.vista.FrmGestionPoliticos;
  */
 public class ClaseMain {
     public static void main(String[] args) {
-        FrmGestionPoliticos ventana = new FrmGestionPoliticos();
+        FrmGestionPolicias ventana = new FrmGestionPolicias();
         ventana.setVisible(true);
     }
 }
